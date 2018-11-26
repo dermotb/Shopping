@@ -7,8 +7,9 @@ using System.Web;
 
 namespace Shopping.Models
 {
-    public class CartContext : DbContext
+  /*  public class CartContext : DbContext
     {
-        public DbSet<Product> productSet { get; set; }
+        public DbSet<Product> ProductSet { get; set; }
     }
+    */
 }

@@ -23,14 +23,14 @@ namespace Shopping.Controllers
         {
             ViewBag.CartCount = theCart.GetCount();
             ViewBag.CartTotal = theCart.CalculateTotal();
-            return View(ctx.productSet);
+            return View(ctx.ProductSet);
         }
 
         public ActionResult AddToCart(string code)
         {
             try
             {
-                Product p = ctx.productSet.FirstOrDefault(x => x.Code.Equals(code));
+                Product p = ctx.ProductSet.FirstOrDefault(x => x.Code.Equals(code));
                 if (p!=null)
                 {
                     theCart.AddItem(p);
@@ -71,7 +71,7 @@ namespace Shopping.Controllers
                 p.Description = collection["Description"];
                 p.Price = Double.Parse(collection["Price"]);
 
-                ctx.productSet.Add(p);
+                ctx.ProductSet.Add(p);
                 ctx.SaveChanges();
 
 
