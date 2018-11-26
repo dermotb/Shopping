@@ -11,14 +11,6 @@ namespace Shopping.Controllers
     {
         CartContext ctx;
 
-/*        static List<Product> ProductList = new List<Product>()
-        {
-            new Product(){Code="03D2E", Description="Mars Bar", Price=1.20},
-            new Product(){Code="05BXJ", Description="Fan Heater", Price=121.00},
-            new Product(){Code="0GGL90", Description="Space Rocket", Price=120000.00},
-            new Product(){Code="HH902l", Description="Wingnut", Price=0.15}
-        };*/
-
         private static Cart theCart = new Cart();
 
         public CartController() : base()
